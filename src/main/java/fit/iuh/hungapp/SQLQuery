@@ -1,0 +1,16 @@
+-- 1. Tạo Database
+CREATE DATABASE HungAppDB;
+GO
+
+-- 2. Sử dụng Database vừa tạo
+USE HungAppDB;
+GO
+
+-- 3. Tạo bảng Users
+CREATE TABLE Users (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    email VARCHAR(100) NOT NULL
+);
+GO
