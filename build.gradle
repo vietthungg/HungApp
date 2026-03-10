@@ -21,6 +21,7 @@ configurations {
 }
 
 repositories {
+    google()
     mavenCentral()
 }
 
@@ -29,7 +30,8 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-webmvc'
     
     // Google AI Java SDK
-    implementation 'com.google.ai.client.generativeai:generativeai:0.7.0'
+    // thay đổi phiên bản
+    implementation 'com.google.genai:google-genai:1.16.0'
     implementation 'com.google.code.gson:gson:2.10.1'
 
     compileOnly 'org.projectlombok:lombok'
